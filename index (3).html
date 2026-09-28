@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#10131a" />
+  <meta name="description" content="Vlad Sheynin — English, voice, creative communication, improvisation and performance lessons." />
+  <title>Vlad Sheynin | Teaching + Media</title>
+  <style>
+    :root{--bg:#0c0e13;--panel:#151922;--panel2:#1b202b;--text:#f4f5f7;--muted:#aeb6c5;--line:#2b3240;--accent:#e9ff70;--accent2:#86e7ff;--max:1080px}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--text);line-height:1.55}
+    a{color:inherit}.wrap{width:min(var(--max),calc(100% - 32px));margin:auto}.nav{position:sticky;top:0;z-index:20;background:rgba(12,14,19,.88);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.07)}
+    .navin{min-height:64px;display:flex;align-items:center;justify-content:space-between;gap:16px}.brand{font-weight:850;letter-spacing:-.02em}.brand span{color:var(--accent)}
+    .navlinks{display:flex;gap:10px;align-items:center}.navlinks a{text-decoration:none;color:var(--muted);font-size:.92rem;padding:8px 10px;border-radius:10px}.navlinks a:hover{background:var(--panel);color:var(--text)}
+    .hero{padding:88px 0 58px}.eyebrow{display:inline-flex;border:1px solid var(--line);background:var(--panel);padding:7px 11px;border-radius:999px;color:var(--accent);font-size:.82rem;font-weight:750;letter-spacing:.05em;text-transform:uppercase}
+    h1{font-size:clamp(3rem,9vw,6.7rem);line-height:.91;letter-spacing:-.065em;margin:22px 0 24px;max-width:950px}.gradient{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+    .lead{max-width:740px;color:var(--muted);font-size:clamp(1.08rem,2.3vw,1.35rem)}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;border-radius:14px;padding:13px 17px;font-weight:800;border:1px solid var(--line);background:var(--panel);transition:.18s}.btn:hover{transform:translateY(-1px);background:var(--panel2)}.btn.primary{background:var(--accent);color:#11140a;border-color:var(--accent)}
+    .proof{display:flex;flex-wrap:wrap;gap:10px;margin-top:36px}.pill{padding:8px 11px;border-radius:999px;background:#11151d;border:1px solid var(--line);color:#c8cfdb;font-size:.88rem}
+    section{padding:58px 0}.section-head{display:grid;grid-template-columns:1fr 1.4fr;gap:28px;margin-bottom:28px}.kicker{color:var(--accent2);font-size:.8rem;font-weight:850;letter-spacing:.09em;text-transform:uppercase}.section-head h2{font-size:clamp(2rem,5vw,3.5rem);line-height:1;letter-spacing:-.045em;margin:8px 0}.section-head p{color:var(--muted);margin:4px 0 0;align-self:end}
+    .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{background:var(--panel);border:1px solid var(--line);border-radius:22px;padding:23px}.card .num{font-size:.78rem;color:var(--accent);font-weight:800}.card h3{font-size:1.35rem;margin:12px 0 8px}.card p{color:var(--muted);margin:0}.card ul{padding-left:18px;color:var(--muted);margin-bottom:0}
+    .method{background:linear-gradient(145deg,#171c25,#11151d);border:1px solid var(--line);border-radius:28px;padding:clamp(24px,5vw,46px)}.method h3{font-size:clamp(2rem,5vw,4rem);letter-spacing:-.05em;margin:0 0 16px}.method p{max-width:800px;color:var(--muted);font-size:1.08rem}.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:28px}.flow div{padding:16px;border:1px solid var(--line);border-radius:16px;background:#0f1218;text-align:center;font-weight:850}.flow span{color:var(--accent);display:block;font-size:.72rem;margin-bottom:5px}
+    .media-grid{display:grid;grid-template-columns:1.2fr .8fr .8fr;gap:14px}.media{min-height:220px;border:1px solid var(--line);border-radius:22px;padding:22px;background:linear-gradient(160deg,#1b202a,#11141a);display:flex;flex-direction:column;justify-content:flex-end}.media:first-child{min-height:340px}.media small{color:var(--accent2);font-weight:800;text-transform:uppercase;letter-spacing:.07em}.media h3{margin:8px 0 3px}.media p{margin:0;color:var(--muted);font-size:.92rem}
+    .lab{display:grid;grid-template-columns:1.1fr .9fr;gap:16px}.labbox{border:1px solid var(--line);border-radius:26px;padding:28px;background:var(--panel)}.labbox h3{font-size:2rem;margin:0 0 10px;letter-spacing:-.04em}.labbox p{color:var(--muted)}.tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}.tag{border:1px solid var(--line);padding:7px 10px;border-radius:999px;color:#c7cfdb;font-size:.82rem}
+    .contact{background:var(--accent);color:#11140a;border-radius:30px;padding:clamp(26px,6vw,54px);display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:center}.contact h2{font-size:clamp(2.3rem,6vw,4.7rem);line-height:.95;letter-spacing:-.055em;margin:0 0 15px}.contact p{max-width:650px}.contact-actions{display:grid;gap:10px}.contact .btn{background:#11140a;color:white;border-color:#11140a}.contact .btn.secondary{background:transparent;color:#11140a;border-color:#11140a}
+    footer{padding:34px 0 46px;color:#7f8999;font-size:.88rem}.foot{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.note{font-size:.78rem;color:#737d8c;margin-top:12px}
+    @media(max-width:760px){.navlinks a:not(.contact-nav){display:none}.hero{padding-top:58px}.section-head,.lab,.contact{grid-template-columns:1fr}.grid3,.media-grid{grid-template-columns:1fr}.media,.media:first-child{min-height:190px}.flow{grid-template-columns:1fr 1fr}.contact-actions{grid-template-columns:1fr 1fr}}
+    @media(max-width:430px){.wrap{width:min(100% - 22px,var(--max))}.flow,.contact-actions{grid-template-columns:1fr}h1{font-size:3.15rem}.hero{padding-bottom:35px}section{padding:42px 0}}
+  </style>
+</head>
+<body>
+  <nav class="nav"><div class="wrap navin"><div class="brand">VLAD<span>.</span></div><div class="navlinks"><a href="#teach">Teaching</a><a href="#method">Method</a><a href="#media">Media</a><a class="contact-nav" href="#contact">Contact</a></div></div></nav>
+
+  <main>
+    <header class="hero"><div class="wrap">
+      <div class="eyebrow">Teacher · Creator · Performer</div>
+      <h1>English, voice & <span class="gradient">creative communication.</span></h1>
+      <p class="lead">I help learners communicate, perform and create—not just repeat exercises. Lessons can combine real conversation, pronunciation, voice, music, improvisation and performance around the learner's actual goals.</p>
+      <div class="actions"><a class="btn primary" href="#contact">Request a Lesson</a><a class="btn" href="#media">See My Work</a></div>
+      <div class="proof"><div class="pill">9+ years teaching</div><div class="pill">25,000+ lessons</div><div class="pill">Kids · Teens · Adults</div><div class="pill">Online + Istanbul</div></div>
+    </div></header>
+
+    <section id="teach"><div class="wrap">
+      <div class="section-head"><div><div class="kicker">What I teach</div><h2>Build a skill by using it.</h2></div><p>Lessons are adapted to the person in front of me. The goal is practical progress: speaking more naturally, understanding more, controlling the voice, performing with confidence, or turning an idea into something real.</p></div>
+      <div class="grid3">
+        <article class="card"><div class="num">01 / LANGUAGE</div><h3>English & Communication</h3><p>Conversation, listening, pronunciation and confidence for real-world communication.</p><ul><li>Natural speaking & listening</li><li>Pronunciation and sound awareness</li><li>Creative English & spontaneous response</li></ul></article>
+        <article class="card"><div class="num">02 / VOICE</div><h3>Singing & Voice</h3><p>Explore how your voice works and develop more control, expression and flexibility.</p><ul><li>Song & performance preparation</li><li>Pitch, rhythm, tone and expression</li><li>Voice experimentation & confidence</li></ul></article>
+        <article class="card"><div class="num">03 / CREATE</div><h3>Creative Performance</h3><p>Improvisation turns the learner from a spectator into an active creator.</p><ul><li>Freestyle & spontaneous speaking</li><li>Rap, rhythm and musical play</li><li>Storytelling, character & performance</li></ul></article>
+      </div>
+    </div></section>
+
+    <section id="method"><div class="wrap"><div class="method">
+      <div class="kicker">OMT · Original Method</div><h3>Learning by creating.</h3>
+      <p>I developed OMT around a simple idea: learning changes when the student is actively creating. A lesson can move from conversation into improvisation, music, storytelling, visual prompts or performance—then return to the original skill with more awareness and control.</p>
+      <div class="flow"><div><span>01</span>Create</div><div><span>02</span>Notice</div><div><span>03</span>Improve</div><div><span>04</span>Try Again</div></div>
+    </div></div></section>
+
+    <section id="media"><div class="wrap">
+      <div class="section-head"><div><div class="kicker">Teaching + Media</div><h2>Examples are coming.</h2></div><p>This page is starting as a live digital business card. I am adding selected teaching, singing, freestyle and creative-practice examples as the media library develops.</p></div>
+      <div class="media-grid">
+        <div class="media"><small>Performance</small><h3>Singing / Voice</h3><p>Selected personal and teaching-oriented voice examples.</p></div>
+        <div class="media"><small>Creative</small><h3>Freestyle</h3><p>Improvisation, rhythm and spontaneous creation.</p></div>
+        <div class="media"><small>Teaching</small><h3>OMT in Practice</h3><p>Activities built around participation rather than passive repetition.</p></div>
+      </div>
+    </div></section>
+
+    <section><div class="wrap"><div class="lab">
+      <div class="labbox"><div class="kicker">Creative Lab</div><h3>I'm building the tools I want to teach with.</h3><p>TRI is an experimental environment for recording, improvisation, audio layers and creative practice. It grows directly from problems and possibilities I encounter while teaching and performing.</p><div class="tags"><span class="tag">TRI</span><span class="tag">OMT</span><span class="tag">Voice</span><span class="tag">Improvisation</span><span class="tag">Creative Learning</span></div></div>
+      <div class="labbox"><div class="kicker">Who it's for</div><h3>Different goals. Active lessons.</h3><p>Children, teenagers and adults can work toward very different outcomes. The common thread is participation: using the skill during the lesson instead of waiting until “later” to become ready.</p></div>
+    </div></div></section>
+
+    <section id="contact"><div class="wrap"><div class="contact">
+      <div><div class="kicker" style="color:#2d3215">Lessons</div><h2>Tell me what you want to be able to do.</h2><p>Send your age or the student's age, lesson type, current goal, and preferred days/times. I can then suggest a practical starting point.</p></div>
+      <div class="contact-actions"><a class="btn" href="https://wa.me/905015332366?text=Hi%20Vlad%2C%20I%27m%20interested%20in%20lessons." target="_blank" rel="noopener">WhatsApp Vlad</a><a class="btn secondary" href="mailto:vladteaching@gmail.com?subject=Lesson%20Inquiry">vladteaching@gmail.com</a></div>
+    </div><p class="note">For students who meet me through a teaching marketplace, booking and communication should continue according to that platform's rules.</p></div></section>
+  </main>
+
+  <footer><div class="wrap foot"><div>© 2026 Vlad Sheynin · Teaching + Media</div><div>English · Voice · Creative Communication</div></div></footer>
+</body>
+</html>
